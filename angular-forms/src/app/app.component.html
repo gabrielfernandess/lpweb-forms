@@ -1,0 +1,16 @@
+<div class="container">
+    <h1>Gerenciador de Heróis (Vingadores)</h1>
+    <div class="row">
+        <div class="col">
+            <app-lista-de-herois [lista]="vingadores" 
+                (onExcluir)="excluir($event)"
+                (onEditar)="editar($event)">
+            </app-lista-de-herois>
+        </div>
+        <div class="col">
+            <h2>Cadastrar herói</h2>
+            <app-formulario [novo]="novo"(onCadastrar)="cadastrar($event)"></app-formulario>
+        </div>
+        <br>
+
+    </div>
